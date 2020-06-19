@@ -1,29 +1,19 @@
 import React from "react";
-import {Grid} from "@material-ui/core";
+import {AppBar} from "@material-ui/core";
+import "./Header.css"
+import LogoArea from "./Header/LogoArea";
+import Navigation from "./Header/Navigation";
 
 export default function Header() {
+
+
     return (
 
-        <header>
-
-            <Grid
-                container
-                direction="row"
-                justify="space-around"
-                alignItems="center"
-            >
-                <Grid
-                    item xs={6}>
-                    Bild
-                </Grid>
-
-                <Grid
-                    item xs={8}>
-                    Headertext
-                </Grid>
-            </Grid>
+        <AppBar className={"header-style"} position={"static"}>
+            <LogoArea/>
+            <Navigation/>
+        </AppBar>
 
 
-        </header>
     );
 }
