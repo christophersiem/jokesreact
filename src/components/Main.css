@@ -2,4 +2,6 @@
     flex-grow: 1;
 
 }
-
+Button{
+    justify-content: center;
+}

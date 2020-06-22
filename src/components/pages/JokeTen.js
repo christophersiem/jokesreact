@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import JokeCard from "../Card/JokeCard";
+import Grid from "@material-ui/core/Grid";
 
 export default function JokeTen() {
 
@@ -14,9 +15,16 @@ export default function JokeTen() {
 
     return (
         <>
+            <Grid
+                container
+                direction="row"
+                justify="space-around"
+                alignItems="center"
+            >
             {jokes && jokes.map((joke) => (
                 <JokeCard joke ={joke}></JokeCard>
             ))}
+            </Grid>
         </>
     );
 }

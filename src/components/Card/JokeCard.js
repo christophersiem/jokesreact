@@ -24,7 +24,7 @@ export default function JokeCard(props) {
                 <CardMedia
                     className={classes.media}
 
-                    image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/American_Eskimo_Dog.jpg/1200px-American_Eskimo_Dog.jpg"
+                    image="https://picsum.photos/100"
 
                 />
                 <CardContent>

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import JokeCard from "../Card/JokeCard";
+import Grid from "@material-ui/core/Grid";
 
 export default function JokeRandom(props) {
 
@@ -11,9 +12,16 @@ export default function JokeRandom(props) {
         }, []
     );
     return (
+        <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="flex-start"
+        >
         <>
             {joke && <JokeCard joke={joke}></JokeCard>}
         </>
+        </Grid>
     );
 
 

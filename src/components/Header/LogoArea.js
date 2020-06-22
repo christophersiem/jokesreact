@@ -9,7 +9,7 @@ export default function LogoArea() {
         </Grid>
 
         <Grid item xs={8}>
-            <h1>Jokes Generator</h1>
+            <h1>Joke Generator</h1>
         </Grid>
     </Grid>)
 }

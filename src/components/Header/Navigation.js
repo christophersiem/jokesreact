@@ -3,6 +3,7 @@ import {Menu, MenuItem} from "@material-ui/core";
 import React from "react";
 import "./Navigation.css"
 import {Link} from "react-router-dom";
+import ButtonBack from "./ButtonBack";
 
 export default function Navigation() {
 
@@ -18,6 +19,7 @@ export default function Navigation() {
     return (
 
         <div className={"buttonClass"}>
+            <ButtonBack></ButtonBack>
         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                 Open Menu
             </Button>
